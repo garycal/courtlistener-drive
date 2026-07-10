@@ -1,0 +1,17 @@
+# Python venv (bulky, machine-specific — rebuild per README)
+.venv/
+__pycache__/
+*.pyc
+
+# Runtime artifacts
+*.part
+mount.log
+
+# Local cache lives under %LOCALAPPDATA%, not here — but ignore any stray copy
+cache/
+
+# WinFsp SDK shim is NOT redistributed (its headers are GPLv3, and the import
+# lib is derived from the WinFsp DLL). Regenerate locally per winfsp-sdk/README.md.
+winfsp-sdk/exports.txt
+winfsp-sdk/inc/
+winfsp-sdk/lib/

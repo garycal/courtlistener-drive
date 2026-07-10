@@ -1,0 +1,8 @@
+# Runtime dependencies for courtlistener-drive.
+#
+# winfspy is a source distribution: building it requires the WinFsp *developer*
+# headers + import library (winfsp/winfsp.h and winfsp-x64.lib). The stock WinFsp
+# runtime install ships only bin/, so see README.md ("Rebuilding the venv") for the
+# one-time SDK shim under winfsp-sdk/ before `pip install winfspy` will compile.
+winfspy==0.8.4
+requests>=2.30
