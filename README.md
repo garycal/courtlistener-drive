@@ -100,3 +100,9 @@ set LIB=%CD%\winfsp-sdk\lib;%LIB%
 If your WinFsp version differs from v2.1, regenerate the headers/lib for your
 version (headers from `github.com/winfsp/winfsp/tree/<tag>/inc/winfsp`; lib via
 `dumpbin /exports "…\winfsp-x64.dll"` → build a `.def` → `lib /def /machine:x64`).
+
+## License
+
+MIT — see [LICENSE](LICENSE). This covers the code in this repo only.
+[WinFsp](https://winfsp.dev/) and its SDK headers (fetched separately, not
+included here) are licensed by the WinFsp project under GPLv3 / commercial.
